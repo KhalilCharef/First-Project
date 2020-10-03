@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> SNAKE </title>
+	<link rel="stylesheet" type="text/css" href="snake.css">
+	<script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+</head>
+
+
+
+<body>	
+	<audio src="play.mp3" id="bb" loop="loop"></audio>
+	<script type="text/javascript">
+		
+	</script>
+	<div id="pre-container">
+		<button id="bttn">Play game</button>
+   	</div>
+	
+	<div id="main-container">
+		<img src="source.gif">
+		<h1> SNAKE GAME </h1>
+
+		<canvas width="900" height="400" id="game"></canvas>
+		<div id="ok">
+		<br><button onclick="moveleft() "class="btn" id="left"> LEFT </button>
+		<br><button onclick="moveup()" class="btn" id="up">UP </button>
+		<button onclick="moveright() "class="btn" id="right">RIGHT </button>
+		<br><button onclick="movedown()" class="btn" id="down">DOWN </button>
+
+	</div>	
+
+<!-- 	<script>
+function playAudio() { 
+var x = document.getElementById('music'); 
+x.play(); 
+} 
+ </script> -->
+	
+	<div id="gameover" >
+		<img id="g.o">
+
+	 </div>
+	<div id="score">   SCORE  </div>	
+	<script>
+	
+
+	var canvas=document.getElementsByTagName('canvas');
+	console.log(canvas)
+	canvas[0].style.display="none"
+	
+	var ok=document.getElementById('ok');
+	console.log(canvas)
+	ok.style.display="none"
+	
+	var ok=document.getElementById('gameover');
+	console.log(canvas)
+	gameover.style.display="none"
+
+		$('#bttn').click(function(){
+		$('#pre-container').hide()
+		$('#game').show()
+		$('#ok').show()
+		})
+			
+	</script>
+		
+	<script src="snake.js"></script>
+
+	
+	</div>
+
+</body>
+</html>

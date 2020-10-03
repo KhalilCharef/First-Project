@@ -1,0 +1,144 @@
+body {
+		height: 100vh;
+		width: 100vw;
+		
+		justify-content: right;
+		align-items: center;
+		margin:0;
+		background-image: url("bg7.gif");
+		background-repeat: no-repeat stretch;
+	}
+
+h1 {
+	color: white;
+	position: absolute;
+  	left: 10px;
+  	top: 10px;
+	font-family: "Lucida Console", Courier, monospace;
+    font-size: 60px;
+    position: absolute;
+  	left: 50px;
+  	top: 30px;
+}
+
+canvas {
+    border: 10px solid black;
+   	background-image: url("bg5.gif");
+   	background-repeat: round;
+   	position: absolute;
+  	left: 500px;
+  	top: 300px;
+}
+ 
+img {
+	width: 100px;
+	height: 70px;
+	position: absolute;
+  	left: 20px;
+  	top: 20px;
+}
+/*label {
+	font-size: 30px;
+	color: white;
+	position: absolute;
+  	right: 550px;
+  	bottom: 270px;
+}*/
+
+#score {
+	font-size: 30px;
+	color: white;
+	position: absolute;
+  	right: 525px;
+  	top:  665px;
+}
+
+#game-board {
+width: 150vmin
+height:150vmin;
+background-image: url("bg.gif");
+display:grid;
+grid-template-rows:repeat(21,1fr);
+grid-template-columns: repeat(21,1fr);
+}
+
+.snake{
+background-color: hsl(200,100%,50%);
+border:25vmin solid black;
+}
+
+.food{
+background-color: hsl(200,100%,50%);
+border:.25vmin solid gold;
+}
+
+#bttn {
+  transition-duration: 0.4s;
+  color: red;
+  width: 900px;
+  height: 400px;
+  position: absolute;
+  left: 500px;
+  top: 300px;
+  font-size: 50px	
+}
+#bttn:hover {
+  background-image: url("bg5.gif");	
+  background-color: #4CAF50;
+  color: white;
+}
+.btn{
+  transition-duration: 0.4s;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 60px;  
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+#up {
+position: absolute;
+  	left: 900px;
+  	top: 740px;	
+}
+
+#down {
+position: absolute;
+  	left: 900px;
+  	top: 800px;	
+}
+#right {
+position: absolute;
+  	left: 1010px;
+  	top: 765px;	
+}
+#left {
+position: absolute;
+  	left: 790px;
+  	top: 765px;	
+}
+#up:hover{
+	transform: scale(1.2);
+}
+#down:hover{
+	transform: scale(1.2);
+}
+#right:hover{
+	transform: scale(1.2);
+}
+#left:hover{
+	transform: scale(1.2);
+}
+
+
+
+#g.o {
+	width: 900px;
+  height: 400px;
+  position: absolute;
+  left: 500px;
+  top: 300px;
+}
